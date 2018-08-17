@@ -1,0 +1,1 @@
+export const FETCH_PROFESSORS = 'FETCH_PROFESSORS';

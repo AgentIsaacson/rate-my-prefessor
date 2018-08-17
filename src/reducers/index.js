@@ -1,7 +1,8 @@
 import { combineReducers } from 'redux';
+import professorsReducer from "./professors"
 
 const rootReducer = combineReducers({
-  state: (state = {}) => state
+  professors: professorsReducer
 });
 
 export default rootReducer;
