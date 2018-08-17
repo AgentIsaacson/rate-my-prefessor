@@ -16,23 +16,34 @@ class Professors extends Component {
 	render() {
 		let filteredProfessors = this.props.professors.filter((professor) => {
 			return (
-				professor.name.toLowerCase().indexOf(this.state.search) !== -1 ||
-				professor.school.toLowerCase().indexOf(this.state.search) !== -1 ||
-				professor.rating.toLowerCase().indexOf(this.state.search) !== -1 ||
-				professor.class.toLowerCase().indexOf(this.state.search) !== -1
+				professor.name
+					.toLowerCase()
+					.indexOf(this.state.search.toLowerCase()) !== -1 ||
+				professor.school
+					.toLowerCase()
+					.indexOf(this.state.search.toLowerCase()) !== -1 ||
+				professor.rating
+					.toLowerCase()
+					.indexOf(this.state.search.toLowerCase()) !== -1 ||
+				professor.class
+					.toLowerCase()
+					.indexOf(this.state.search.toLowerCase()) !== -1
 			);
 		});
 
 		return (
 			<div>
-				<h1>Search Your Professor</h1>
-				<ul>
+				<div className="search-container">
+					<h1 className="h1style">Rate My Professor</h1>
 					<input
+						className="search-bar"
 						type="text"
-						placeholder="Search a professor:"
+						placeholder="Search a professor"
 						value={this.state.search}
 						onChange={this.updateSearch.bind(this)}
 					/>
+				</div>
+				<ul>
 					{filteredProfessors.map((professor) => {
 						return <Professor professor={professor} key={professor.id} />;
 					})}

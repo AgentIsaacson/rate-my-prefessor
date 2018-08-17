@@ -11,7 +11,7 @@ let professors = [
 		school: "Lehi",
 		class: "flying",
 		rating: "4",
-		class: "hangry management"
+		class: "Hangry Management"
 	},
 	{
 		id: 1,
@@ -23,30 +23,73 @@ let professors = [
 	{
 		id: 2,
 		name: "Sue",
-		school: "Brittan",
-		class: "self defense",
+		school: "Britian",
+		class: "Self Defense",
 		rating: "5"
 	},
 	{
 		id: 3,
-		name: "Professor Xavier",
+		name: "Xavier",
 		school: "Gifted Youngsters",
 		class: "Anger Managment",
-		rating: "4/5"
+		rating: "4"
 	},
 	{
 		id: 4,
-		name: "Professor Wold",
+		name: "Wold",
 		school: "Bottega",
 		class: "How to be a Super Hero",
-		rating: "5/5"
+		rating: "5"
 	},
 	{
 		id: 5,
-		name: "Professor Green",
+		name: "Green",
 		school: "Bottega",
 		class: "How to be a Super Villian",
 		rating: "0/5"
+	},
+	{
+		id: 6,
+		name: "Mick",
+		school: "Lehi",
+		class: "fly",
+		rating: "0",
+		class: "Management"
+	},
+	{
+		id: 7,
+		name: "Bill",
+		school: "School",
+		class: "PE",
+		rating: "2"
+	},
+	{
+		id: 8,
+		name: "Sally",
+		school: "Spanish Fork",
+		class: "Spanglish",
+		rating: "5"
+	},
+	{
+		id: 9,
+		name: "Nick",
+		school: "Gifted Youngsters",
+		class: "Computers",
+		rating: "4"
+	},
+	{
+		id: 10,
+		name: "Sam",
+		school: "Graphics",
+		class: "3D Animation",
+		rating: "5"
+	},
+	{
+		id: 11,
+		name: "Grayson",
+		school: "Institute",
+		class: "Math",
+		rating: "5"
 	}
 ];
 

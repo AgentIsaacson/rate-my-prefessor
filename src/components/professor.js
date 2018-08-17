@@ -7,16 +7,24 @@ export default class Professor extends Component {
 	}
 	render() {
 		return (
-			<div id="wrapper">
+			<div>
 				<NavLink to="/professor">
-					<div className="professor">
-						<div className="professor">
+					<a className="professor" href="#">
+						<div className="icon">
+							{" "}
+							<img src="\assets\hat.png" />
+						</div>
+						<div className="professor-name">
 							Professor: {this.props.professor.name}
 						</div>
-						<div className="school">School: {this.props.professor.school}</div>
-						<div className="school">class: {this.props.professor.class}</div>
+						<div className="school-name">
+							School: {this.props.professor.school}
+						</div>
+						<div className="subject-name">
+							Class: {this.props.professor.class}
+						</div>
 						<div className="rating">Rating: {this.props.professor.rating}</div>
-					</div>
+					</a>
 				</NavLink>
 			</div>
 		);
