@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import Results from "./results";
+import Professor from './professor';
 
 export default class Home extends Component {
-<<<<<<< HEAD
 	render() {
 		return (
 			<div>
@@ -10,7 +10,6 @@ export default class Home extends Component {
 			</div>
 		);
 	}
-=======
   render() {
     return (
       <div>
@@ -34,10 +33,10 @@ export default class Home extends Component {
           <p className="rate">Rate.</p>
           <p className="know">Know.</p>
         </div>
+        <Professor />
       </div>
 
       
     );
   }
->>>>>>> c53b0a3839d4f7f540db76bb600d84229a58cbd1
 }
