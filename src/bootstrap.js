@@ -17,6 +17,7 @@ import Home from "./components/home";
 import Results from "./components/results";
 import Professors from "./components/professors";
 import ProfessorPage from "./components/professorPage";
+import NewReview from "./components/newReview";
 
 function main() {
 	ReactDOM.render(
@@ -28,6 +29,7 @@ function main() {
 					<Route exact path="/professors" component={Professors} />
 					<Route exact path="/professor" component={ProfessorPage} />
 					<Route exact path="/add-a-professor" component={AddProfessor} />
+					<Route exact path="/leave-a-review" component={NewReview} />
 				</Switch>
 			</BrowserRouter>
 		</Provider>,
