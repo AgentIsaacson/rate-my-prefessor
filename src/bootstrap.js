@@ -13,12 +13,14 @@ import './style/main.scss';
 import AddProfessor from './components/addProfessor';
 
 
+
 function main() {
   ReactDOM.render(
     <Provider store={createStoreWithMiddleware(reducers)}>
       <BrowserRouter>
       <Switch>
         <Home exact path= "/" component={Home} />
+        <Route exact path="/home" component={Home} />
         <Route path = "/addprofessor" component={AddProfessor} />
         </Switch>
       </BrowserRouter>

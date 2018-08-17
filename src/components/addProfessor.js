@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from 'react-router-dom';
 
 
 class AddProfessor extends Component {
@@ -8,7 +9,7 @@ class AddProfessor extends Component {
             professorName: "",
             school: "",
             subject: "",
-            description: "",
+            
         };
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -21,14 +22,16 @@ class AddProfessor extends Component {
             [name]: value
         });
     }
+    
     handleSubmit(event) {
-        alert('Thank you for submitting this professor!');
+        alert(' Professor Name:' + this.state.professorName + ' School: ' + this.state.school + ' Subject:' +  this.state.subject + ' was submitted');;
     }
     render() {
         return (
 
 
             <div className="Form">
+            <div className="title">Submit your Professor</div>
                 <div className="container">
 
                     <form className="form" onSubmit={this.handleSubmit}>
@@ -67,18 +70,12 @@ class AddProfessor extends Component {
 
 
                         </div>
-                        <button onClick={this.showSummary}>
-                            Submit
-              </button>
-
+                        <div className="portfolioButton">
+                        <button id ="submit"> Submit</button>
+                        
+                        </div>
 
                     </form>
-                </div>
-                <div className="summary">
-                    <p>Professor Name: {this.state.professorName}</p>
-                    <p>School: {this.state.school}</p>
-                    <p>Subject: {this.state.subject}</p>
-
                 </div>
 
 
