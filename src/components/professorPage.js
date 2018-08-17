@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
-import NewReview from "./newReview";
 
 class ProfessorPage extends Component {
 	render() {
@@ -31,9 +30,6 @@ class ProfessorPage extends Component {
 						<li>Height: 6ft5</li>
 					</div>
 				</div>
-				<NavLink to="/leave-a-review">
-					<NewReview />
-				</NavLink>
 				<NavLink to="/results">
 					<button className="back-to-results">Back to Results</button>
 				</NavLink>
