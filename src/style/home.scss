@@ -46,7 +46,7 @@ button:hover {
 .body .search {
     animation-name: transition;
     animation-duration: 2s;
-    animation-delay: 1s;
+    animation-delay: .5s;
     animation-fill-mode: forwards;
   
     
@@ -55,7 +55,7 @@ button:hover {
 .body .rate {
     animation-name: transition;
     animation-duration: 2s;
-    animation-delay: 3s;
+    animation-delay: 1.5s;
     animation-fill-mode: forwards;
   
    
@@ -64,7 +64,7 @@ button:hover {
 .body .know {
     animation-name: transition;
     animation-duration: 2s;
-    animation-delay: 5s;
+    animation-delay: 2.5s;
     animation-fill-mode: forwards;
 
     
