@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 class ProfessorImg extends Component {
+
     render() {
         return (
             <div id="wrapper">
@@ -14,15 +15,15 @@ class ProfessorImg extends Component {
                     </div>
                 </div>
                 <div className="attributes">
-                    <li><b>Department:</b> COMPUTER SCIENCE</li>
-                    <li><b>School:</b> TECHNOLOGY</li>
-                    <li><b>Height:</b> 6ft5</li>
-                    <li><b>Favorite Book:</b> The Gods Must Be Crazy</li>
-                    <li><b>Office:</b> CB 311 - E</li>
-                    <li><b>Email:</b> madlib@bottega.edu</li>
-                    <li><b>Mail Code:</b> 133</li>
-                    <li><b>Phone:</b> (801)-777-7777</li>
-                    <li><b>Height:</b> 6ft5</li>
+                    <li>Department: Art & Culture</li>
+                    <li>School: TECHNOLOGY</li>
+                    <li>Height: 6ft5</li>
+                    <li>Favorite Book: The Gods Must Be Crazy</li>
+                    <li>Office: CB 311 - E</li>
+                    <li>Email: madlib@bottega.edu</li>
+                    <li>Mail Code: 133</li>
+                    <li>Phone: (801)-777-7777</li>
+                    <li>Height: 6ft5</li>
 
                 </div>
             </div>
@@ -32,3 +33,21 @@ class ProfessorImg extends Component {
 
 export default ProfessorImg;
 
+
+// constructor(props) {
+//     super(props);
+
+//     this.state = {
+//         department: "",
+//         school: "",
+//     }
+
+//     this.updateName = this.updateName.bind(this);
+// }
+
+// updateName() {
+//     this.setState({ department: "CS" })
+// }
+
+// <button onClick={this.updateName} >Click me</button>
+// {this.state.department}

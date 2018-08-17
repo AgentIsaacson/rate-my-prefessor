@@ -22,23 +22,25 @@
     margin-bottom: 5px;
 }
 
-.pin:hover {
+.pin, img:hover {
     border-radius: 20px;
     cursor: pointer;
 }
 
 .attributes {
+    font-family: 'Righteous', cursive;
     line-height: 2.4;
-    color: #1BA7C0;
-    margin-top: 40px;
+    color: black;
+    margin-top: 35px;
     font-size: 20px;
     float: left;
 }
 
-.header-img{
-    align-items: center;
-}
-
 .columns {
     text-align: center;
+    margin-top: 10px;
+
+    h2{
+        font-family: 'Hanalei Fill', cursive;
+    }
 }
