@@ -1,0 +1,92 @@
+@keyframes transition {
+    from {color: rgba(0,0,0,0);}
+    to {color: black;}
+}
+
+.navbar {
+    background: black;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: flex-start
+}
+
+.navbar a {
+    margin-right: 200px;
+}
+.second-search {
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    margin: 10px;
+    height: 100px;
+    width: 200px;
+    background-color: black;
+    color: white;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.body p {
+    font-size: 5em;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: rgba(0,0,0,0);
+}
+
+.body .search {
+    animation-name: transition;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+  
+    
+}
+
+.body .rate {
+    animation-name: transition;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+  
+   
+}
+
+.body .know {
+    animation-name: transition;
+    animation-duration: 2s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+
+    
+}
+
+.body p:nth-child(2) {
+    align-items: center;
+}
+
+.body p:nth-child(3) {
+    align-items: flex-end;
+}
+
+input {
+    width: 500px;
+    background-color: darkgray
+}
+
+.body {
+    background: url() no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    
+}
