@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
 
 class AddProfessor extends Component {
 	constructor(props) {
@@ -44,7 +45,7 @@ class AddProfessor extends Component {
 	render() {
 		return (
 			<div>
-				<div className="Form">
+				<div className="form">
 					<div className="title">Add a New Professor</div>
 					<div className="container">
 						<form className="form" onSubmit={this.handleSubmit}>
@@ -86,6 +87,9 @@ class AddProfessor extends Component {
 							</div>
 						</form>
 					</div>
+					<NavLink to="/results">
+						<button className="back-to-results">Back to Results</button>
+					</NavLink>
 				</div>
 			</div>
 		);

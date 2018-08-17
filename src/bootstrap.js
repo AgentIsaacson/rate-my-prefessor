@@ -16,6 +16,7 @@ import "./style/main.scss";
 import Home from "./components/home";
 import Results from "./components/results";
 import Professors from "./components/professors";
+import ProfessorPage from "./components/professorPage";
 
 function main() {
 	ReactDOM.render(
@@ -25,6 +26,7 @@ function main() {
 					<Route exact path="/" component={Home} />
 					<Route exact path="/results" component={Results} />
 					<Route exact path="/professors" component={Professors} />
+					<Route exact path="/professor" component={ProfessorPage} />
 					<Route exact path="/add-a-professor" component={AddProfessor} />
 				</Switch>
 			</BrowserRouter>

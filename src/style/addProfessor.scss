@@ -1,31 +1,36 @@
 .addProfessor {
-    background-color: #EAEBED;
-    }
-    .container {
-      display: flex;
-      justify-content: center;
-    }
-    .title {
-       display: flex;
-       justify-content: center;
-       font-size: 45px;
-    }
-    input {
-      margin-top: -1px;
-    }
-    label {
-      color: #006989;
-      font-size: 25px;
-      margin-top: 10px;
-      margin-bottom: -1px;
-    }
-    button {
-      text-align: center;
-      border: none;
-      background-color: #01A7C2;
-      height: 35px;
-      width: 100px;
-      color: #EAEBED;
-      border-radius: 6px;
-      margin-top: 15px;
-    }
+	display: flex;
+	justify-content: center;
+	background-color: #eaebed;
+}
+.container {
+	display: flex;
+	justify-content: center;
+}
+.title {
+	display: flex;
+	justify-content: center;
+	font-size: 45px;
+}
+input {
+	margin-top: -1px;
+}
+label {
+	color: #006989;
+	font-size: 25px;
+	margin-top: 10px;
+	margin-bottom: -1px;
+}
+button {
+	text-align: center;
+	border: none;
+	background-color: #01a7c2;
+	height: 50px;
+	width: 100px;
+	color: #eaebed;
+	border-radius: 6px;
+	margin-top: 15px;
+}
+.back-to-results {
+	margin-left: 720px;
+}
