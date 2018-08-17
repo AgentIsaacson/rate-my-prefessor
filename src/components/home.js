@@ -1,18 +1,19 @@
 import React, { Component } from 'react';
+import Typing from 'react-typing-animation';
 
 export default class Home extends Component {
+
+  constructor(props) {
+    super(props)
+  }
+
+
   render() {
     return (
       <div>
-        <div className="navbar">
-          <div>
-            <a className="active" href="#">Rate My Professor</a>
-          </div>
-          <div>
-            <input type="text" placeholder="SEARCH FOR A PROFESSOR OR SCHOOL"></input>
-          </div>
+        <div className="searchbar">
+          <input type="text" placeholder="SEARCH FOR A PROFESSOR OR SCHOOL"></input>
         </div>
-
         <div className="second-search">
           <button>Find a professor</button>
           <button>Find a school</button>
