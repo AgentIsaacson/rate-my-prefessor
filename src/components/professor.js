@@ -7,8 +7,9 @@ class Professor extends Component {
     render() {
         return (
             <div className="professor">
-                <div className=''>Professor: {this.props.professor.name}</div> 
+                <div className='professor'>Professor: {this.props.professor.name}</div> 
                 <div className='school'>School: {this.props.professor.school}</div>
+                <div className='school'>class: {this.props.professor.class}</div>
                 <div className='rating'>Rating: {this.props.professor.rating}</div>
             </div>
         );

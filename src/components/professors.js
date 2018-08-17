@@ -15,7 +15,10 @@ class Professors extends Component {
     
       render() {
         let filteredProfessors = this.props.professors.filter((professor) => {
-          return professor.name.toLowerCase().indexOf(this.state.search) !== -1;
+          return professor.name.toLowerCase().indexOf(this.state.search) !== -1 || 
+                 professor.school.toLowerCase().indexOf(this.state.search) !== -1 ||
+                 professor.rating.toLowerCase().indexOf(this.state.search) !== -1 ||
+                 professor.class.toLowerCase().indexOf(this.state.search) !== -1;
         });
     
         return (
