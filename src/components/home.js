@@ -1,42 +1,37 @@
 import React, { Component } from "react";
-import Results from "./results";
-import Professor from './professor';
+import { NavLink } from "react-router-dom";
 
 export default class Home extends Component {
 	render() {
 		return (
 			<div>
-				<Results />
+				<div className="navbar">
+					<div>
+						<NavLink to="/">Rate My Professor</NavLink>
+					</div>
+					<div>
+						<input type="text" placeholder="SEARCH FOR A PROFESSOR OR SCHOOL" />
+					</div>
+				</div>
+
+				<div className="second-search">
+					<NavLink to="/results">
+						<button>Find a professor</button>
+					</NavLink>
+					<NavLink to="/results">
+						<button>Find a school</button>
+					</NavLink>
+					<NavLink to="/results">
+						<button>Rate a professor</button>
+					</NavLink>
+				</div>
+
+				<div className="body">
+					<p className="search">Search.</p>
+					<p className="rate">Rate.</p>
+					<p className="know">Know.</p>
+				</div>
 			</div>
 		);
 	}
-  render() {
-    return (
-      <div>
-        <div className="navbar">
-          <div>
-            <a className="active" href="#">Rate My Professor</a>
-          </div>
-          <div>
-            <input type="text" placeholder="SEARCH FOR A PROFESSOR OR SCHOOL"></input>
-          </div>
-        </div>
-
-        <div className="second-search">
-          <button>Find a professor</button>
-          <button>Find a school</button>
-          <button>Rate a professor</button>
-        </div>
-
-        <div className="body">
-          <p className="search">Search.</p>
-          <p className="rate">Rate.</p>
-          <p className="know">Know.</p>
-        </div>
-        <Professor />
-      </div>
-
-      
-    );
-  }
 }

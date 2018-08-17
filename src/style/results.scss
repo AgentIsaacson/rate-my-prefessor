@@ -1,0 +1,40 @@
+.results-wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    grid-gap: 10px;
+    grid-auto-rows: minmax (100px auto);
+    border: solid;
+    border-color: black;
+    border-width: thin;
+    width: 90%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+}
+
+.home-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.icon {
+    padding-left: 10px;
+}
+
+.professor-name {
+
+}
+
+.school-name {
+
+}
+
+.subject-name {
+
+}
+
+.rating {
+
+}
