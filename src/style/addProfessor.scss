@@ -39,5 +39,8 @@ button {
 }
 .back-to-results {
 	margin-left: 722px;
-
+	&__add{
+		margin-right:50px;
+		width: 100%;
+	}
 }

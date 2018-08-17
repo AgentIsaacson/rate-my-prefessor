@@ -98,7 +98,9 @@ export default class Results extends Component {
 		return (
 			<div className="results-wrapper">
 				<Professors professors={professors} />
-				<NavLink to="/add-a-professor">Add a Professor</NavLink>
+				<NavLink to="/add-a-professor">
+					<button className="back-to-results__add">Add a Professor</button>
+				</NavLink>
 			</div>
 		);
 	}
