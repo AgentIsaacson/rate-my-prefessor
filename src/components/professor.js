@@ -8,7 +8,8 @@ class Professor extends Component {
         return (
             <div className="professor">
                 <div className=''>Professor: {this.props.professor.name}</div> 
-                <div>School: {this.props.professor.school}</div>
+                <div className='school'>School: {this.props.professor.school}</div>
+                <div className='rating'>Rating: {this.props.professor.rating}</div>
             </div>
         );
     }

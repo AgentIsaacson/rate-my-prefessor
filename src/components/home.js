@@ -5,17 +5,20 @@ let professors = [
   {
     id: 0,
     name: 'Mark',
-    school: 'work'
+    school: 'Lehi',
+    rating: 4
   },
   {
     id: 1,
     name: 'Bob',
-    school: 'School'
+    school: 'Home School',
+    rating: 3
   },
   {
     id: 2,
     name: 'Sue',
-    school: 'Home'
+    school: 'Brittan',
+    rating: 5
   }
 ]
 
