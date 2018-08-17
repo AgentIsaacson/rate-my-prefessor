@@ -8,6 +8,8 @@ import reducers from "./reducers";
 import thunk from "redux-thunk";
 
 const createStoreWithMiddleware = applyMiddleware(thunk)(createStore);
+import AddProfessor from './components/addProfessor';
+
 
 import "bootstrap/dist/css/bootstrap.css";
 import "./style/main.scss";
