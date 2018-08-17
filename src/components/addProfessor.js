@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Link } from 'react-router-dom';
+
+
 
 
 class AddProfessor extends Component {
@@ -24,22 +25,22 @@ class AddProfessor extends Component {
     }
     
     handleSubmit(event) {
-        alert(' Professor Name:' + this.state.professorName + ' School: ' + this.state.school + ' Subject:' +  this.state.subject + ' was submitted');;
+        alert('Professor Name:     ' + this.state.professorName + '        School:     ' + this.state.school + '       Subject:        ' +  this.state.subject);;
     }
     render() {
         return (
-
-
+            <div>
             <div className="Form">
-            <div className="title">Submit your Professor</div>
+            
+            <div className="title">Add a New Professor</div>
                 <div className="container">
 
                     <form className="form" onSubmit={this.handleSubmit}>
-                        <label className="professorName">Professor Name</label>
+                        <label className="professorName">Professor </label>
                         <div className="control">
                             <input
                                 className="input"
-                                placeholder="input"
+                                placeholder="Name"
                                 type="text"
                                 name="professorName"
                                 value={this.state.fullname}
@@ -50,7 +51,7 @@ class AddProfessor extends Component {
                         <div className="control">
                             <input
                                 className="input"
-                                placeholder="input"
+                                placeholder="University"
                                 type="text"
                                 name="school"
                                 value={this.state.school}
@@ -61,7 +62,7 @@ class AddProfessor extends Component {
                         <div className="control">
                             <input
                                 className="input"
-                                placeholder="input"
+                                placeholder="Class"
                                 type="subject"
                                 name="subject"
                                 value={this.state.subject}
@@ -77,7 +78,7 @@ class AddProfessor extends Component {
 
                     </form>
                 </div>
-
+                </div>
 
             </div>
         );
