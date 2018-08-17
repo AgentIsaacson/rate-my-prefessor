@@ -18,14 +18,18 @@ button {
     margin: 10px;
     height: 100px;
     width: 200px;
-    background-color: black;
-    color: white;
+    background-color: #006989;
+    color: black;
+    border-radius: 5px;
+    transition: transform .3s;
 }
 
 button:hover {
-    background-color: white;
-    color: black;
+    background-color: #01A7C2;
+    color: white;
+    font-weight: bold;
     cursor: pointer;
+    transform: scale(1.1);
 }
 
 .body p {
@@ -61,7 +65,9 @@ button:hover {
 
 input {
     width: 500px;
-    background-color: darkgray
+    background-color: #EAEBED;
+    border-radius: 3px;
+    padding-left: 10px;
 }
 
 .body {
