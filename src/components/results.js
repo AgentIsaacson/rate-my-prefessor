@@ -53,18 +53,7 @@ export default class Results extends Component {
 	render() {
 		return (
 			<div className="results-wrapper">
-				<NavLink to="/">Rate My Professor</NavLink>
-					<Professors professors={professors} />
-				
-
-				<div className="icon">
-					{" "}
-					<img src="\assets\2000px-University_hat_icon1.png" />
-				</div>
-				<div className="professor-name">Professor Xavier</div>
-				<div className="school-name">Gifted Youngsters</div>
-				<div className="subject-name">Anger Managment</div>
-				<div className="rating">*****</div>
+				<Professors professors={professors} />
 				<NavLink to="/add-a-professor">Add a Professor</NavLink>
 			</div>
 		);

@@ -1,21 +1,10 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 
-
-
 export default class Home extends Component {
 	render() {
 		return (
 			<div>
-				<div className="navbar">
-					<div>
-						<NavLink to="/">Rate My Professor</NavLink>
-					</div>
-					<div>
-						<input type="text" placeholder="SEARCH FOR A PROFESSOR OR SCHOOL" />
-					</div>
-				</div>
-
 				<div className="second-search">
 					<NavLink to="/results">
 						<button>Find a professor</button>
