@@ -8,15 +8,14 @@ import reducers from "./reducers";
 import thunk from "redux-thunk";
 
 const createStoreWithMiddleware = applyMiddleware(thunk)(createStore);
-import AddProfessor from './components/addProfessor';
-
+import AddProfessor from "./components/addProfessor";
 
 import "bootstrap/dist/css/bootstrap.css";
 import "./style/main.scss";
 
 import Home from "./components/home";
 import Results from "./components/results";
-import Professor from "./components/professor";
+import Professors from "./components/professors";
 
 function main() {
 	ReactDOM.render(
@@ -25,8 +24,8 @@ function main() {
 				<Switch>
 					<Route exact path="/" component={Home} />
 					<Route exact path="/results" component={Results} />
-					<Route exact path="/professor" component={Professor} />
-					{/* <Route exact path="/add-a-professor" component={} /> */}
+					<Route exact path="/professors" component={Professors} />
+					<Route exact path="/add-a-professor" component={AddProfessor} />
 				</Switch>
 			</BrowserRouter>
 		</Provider>,
